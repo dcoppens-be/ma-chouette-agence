@@ -3,6 +3,7 @@
     --MCA-orange:#CB4B10; /*#EE682B; /*#B85C31; /*#F3976C;*/
     --MCA-orange-hover:#AB633F; /* #c27956; */
     --MCA-orange-text:white;
+    --MCA-yellow:#FEE054;
 }
 
 body {
@@ -98,8 +99,9 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/bg-texture-paper.png");
     background-size: 280px 280px;
+    opacity:1;
 }
 
 .b-parallax {
@@ -126,11 +128,20 @@ a:hover {
     border-color: rgba(255, 255, 255, .2);
 }
 
+.d-bloc a .icon-md
+{
+    color:white;
+}
+
+.d-bloc a:hover .icon-md
+{
+    color:var(--MCA-yellow);
+}
+
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -147,7 +158,6 @@ a:hover {
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -300,9 +310,12 @@ a:hover {
 }
 
 .navbar-brand {
+    display:flex;
+    align-items:center;
+    font-size:36px;
     height: auto;
     padding: 3px 15px;
-    font-size: 25px;
+    /* font-size: 25px; */
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -786,7 +799,7 @@ h4 {
 }
 
 .tc-white {
-    color: var(--MCA-orange) !important;/* var(--MCA-orange); /* #F3976C!important; */
+    color: var(--MCA-yellow) !important;/* var(--MCA-orange); /* #F3976C!important; */
 }
 
 .btn-atomic-tangerine {
@@ -804,7 +817,7 @@ h4 {
 }
 
 .ltc-white:hover {
-    color: var(--MCA-orange) !important; /* #cccccc!important; */
+    color: var(--MCA-yellow) !important; /* var(--MCA-orange) !important; /* #cccccc!important; */
 }
 
 .ltc-atomic-tangerine {
@@ -821,19 +834,21 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/bg-dots.png");
+    opacity:1;
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/bg-lines-h2.png");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/bg-banniere.jpg");
+    opacity:1;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/bg-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
